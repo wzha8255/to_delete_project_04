@@ -1,0 +1,10 @@
+name: Issue Triggered Workflow
+on: 
+  issues:
+    types: [opened]
+jobs:
+  output_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print out issues
+        run: echo ${{ github.event.issue }}
