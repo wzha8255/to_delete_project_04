@@ -11,7 +11,7 @@ jobs:
       - name: Run lint
         run: npm run lint
 
-jobs:
+
   test:
     needs: lint
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
       - name: Run test
         run: npm test
 
-jobs: 
+
   build:
     needs: test
     runs-on: ubuntu-latest
