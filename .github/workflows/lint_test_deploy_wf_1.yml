@@ -1,4 +1,4 @@
-name: Lint Test and Deploy
+name: Lint Test and Deploy Workflow 1
 on: push
 jobs:
   lint_test_deploy:
